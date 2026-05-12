@@ -1,0 +1,32 @@
+name: Infra Build
+description: Track something you're building or provisioning on the cluster.
+title: Build: [thing]
+labels: [infrastructure]
+body:
+  - type: textarea
+    id: what-im-building
+    attributes:
+      label: What I'm building
+      description: A short description of what you're provisioning or setting up.
+      placeholder: e.g. A self-hosted Plausible instance on the Alexandria cluster
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      options:
+        - label: It runs on the cluster
+        - label: Config committed to `infrastructure/`
+        - label: I can destroy and recreate it from scratch
+
+  - type: textarea
+    id: gotchas
+    attributes:
+      label: Gotchas / things to watch for
+      description: Leave blank and fill in as you hit them.
+      placeholder: e.g. Port 9000 conflicts with the existing Minio instance
+    validations:
+      required: false
+

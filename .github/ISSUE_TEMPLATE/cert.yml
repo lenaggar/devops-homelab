@@ -1,0 +1,42 @@
+name: Exam Tracker
+description: Track an upcoming certification exam from prep to pass.
+title: Exam: [code] – [name]
+labels: [exam]
+body:
+  - type: textarea
+    id: exam
+    attributes:
+      label: Exam
+      description: Full name, code, and type \(MCQ / lab / hybrid\).
+      placeholder: e.g. AWS Certified Solutions Architect – Associate (SAA-C03) — MCQ
+    validations:
+      required: true
+
+  - type: input
+    id: target-date
+    attributes:
+      label: Target date
+      placeholder: e.g. July 2025
+    validations:
+      required: true
+
+  - type: textarea
+    id: prep-resources
+    attributes:
+      label: Prep resources
+      description: Courses, practice exams, docs — one per line.
+      placeholder: |
+        - [ ] https://example.com/course
+        - [ ] https://example.com/practice-exam
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: status
+    attributes:
+      label: Status
+      options:
+        - label: Voucher purchased
+        - label: Exam booked
+        - label: Passed
+

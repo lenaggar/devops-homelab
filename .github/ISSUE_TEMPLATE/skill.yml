@@ -1,0 +1,43 @@
+name: Learning Log
+description: Track something new you're learning and its connection to Alexandria.
+title: Learn: [topic]
+labels: [learning]
+body:
+  - type: textarea
+    id: what-im-learning
+    attributes:
+      label: What I'm learning
+      description: One-line description of the topic.
+      placeholder: e.g. How React's reconciliation algorithm works
+    validations:
+      required: true
+
+  - type: textarea
+    id: why-it-matters
+    attributes:
+      label: Why it matters
+      description: How does this fit into the bigger picture?
+      placeholder: e.g. Understanding this will help me optimise re-renders in the Alexandria feed
+    validations:
+      required: true
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Resources
+      description: Links, docs, or videos you plan to use. Add one per line.
+      placeholder: |
+        - [ ] https://example.com/article
+        - [ ] https://youtube.com/watch?v=...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: definition-of-done
+    attributes:
+      label: Definition of done
+      options:
+        - label: I can explain this without notes
+        - label: I've used it in a real context on Alexandria
+        - label: Notes committed to `docs/learning-notes/`
+
