@@ -1,7 +1,10 @@
 name: Exam Tracker
 description: Track an upcoming certification exam from prep to pass.
-title: Exam: [code] – [name]
-labels: [exam]
+title: "[Exam]: "
+labels: []
+projects: ["lenaggar/3"]
+assignees:
+  - lenaggar
 body:
   - type: textarea
     id: exam

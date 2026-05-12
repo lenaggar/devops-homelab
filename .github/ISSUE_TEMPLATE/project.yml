@@ -1,7 +1,10 @@
-name: Infra Build
+name: Project Build
 description: Track something you're building or provisioning on the cluster.
-title: Build: [thing]
-labels: [infrastructure]
+title: "[Build]: "
+labels: []
+projects: ["lenaggar/3"]
+assignees:
+  - lenaggar
 body:
   - type: textarea
     id: what-im-building

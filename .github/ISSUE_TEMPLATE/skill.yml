@@ -1,7 +1,10 @@
 name: Learning Log
 description: Track something new you're learning and its connection to Alexandria.
-title: Learn: [topic]
-labels: [learning]
+title: "[Learn]: "
+labels: []
+projects: ["lenaggar/3"]
+assignees:
+  - lenaggar
 body:
   - type: textarea
     id: what-im-learning
